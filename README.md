@@ -9,7 +9,7 @@ Bu paket IPv4 adresini ilgili koordinasyon merkezini tespit ederek Whois sorgula
 ### Install / Yükleme
 
 ```bash
-$ go get github.com/c1982/ripego
+$ go get github.com/Mihonarium/ripego
 ```
 
 ### Usage / Kullanım
