@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/sebastianbroekhoven/ripego"
+	"github.com/Mihonarium/ripego"
 )
 
 func main() {
