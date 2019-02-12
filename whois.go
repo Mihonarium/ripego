@@ -50,12 +50,12 @@ func IPv4Lookup(ipaddr string) (w WhoisInfo, err error) {
 		return w, errors.New("Invalid IPv4 address: " + ipaddr)
 	}
 
-	resp, err := go_ianawhois.Query(ipaddr)
+	resp, err := ianawhois.Query(ipaddr)
 	if err != nil {
 		return w, errors.New("Query failed for: " + ipaddr)
 	}
 
-	server, org := go_ianawhois.Server(resp)
+	server, org := ianawhois.Server(resp)
 
 	if org == "afrinic" {
 		w, err = AfrinicCheck(ipaddr)
@@ -80,12 +80,12 @@ func IPv6Lookup(ipaddr string) (w WhoisInfo, err error) {
 		return w, errors.New("Invalid IPv6 address: " + ipaddr)
 	}
 
-	resp, err := go_ianawhois.Query(ipaddr)
+	resp, err := ianawhois.Query(ipaddr)
 	if err != nil {
 		return w, errors.New("Query failed for: " + ipaddr)
 	}
 
-	server, org := go_ianawhois.Server(resp)
+	server, org := ianawhois.Server(resp)
 
 	if org == "afrinic" {
 		w, err = AfrinicCheck(ipaddr)
