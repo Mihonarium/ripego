@@ -3,7 +3,7 @@ package ripego
 import (
 	"errors"
 
-	"github.com/sebastianbroekhoven/go-get-ianawhois"
+	"gitee.com/GoLibs/go-ianawhois"
 )
 
 var getNic = make(map[string]Whois)
